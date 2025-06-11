@@ -1,6 +1,9 @@
 # NPM 설치 및 사용법
 
 ## Node.js란?
+
+![logo](./njslogo.svg)
+
 Node.js는 브라우저 밖에서도 자바스크립트를 실행할 수 있는 환경을 의미합니다. Node.js가 나오기 전까지는 자바스크립트가 브라우저의 동작을 제어하는데 사용되었고 브라우저에서만 실행할 수 있었지만 이제는 Node.js로 자바스크립트를 브라우저 밖에서도 실행할 수 있게 되었습니다.
 
 
@@ -12,6 +15,7 @@ NPM(Node Package Manager)은 Node.js를 설치하면 자동으로 설치가 됩�
 ![1](image.png)
 
 다운로드 : https://nodejs.org/ko/
+
 Node.js 설치시 NPM도 함께 설치가 되며, 터미널 실행 후 아래 명령어를 통해 버전 체크하여 설치가 정상으로 되었는지 확인 가능합니다.
 
 ```bash
@@ -40,12 +44,15 @@ $ npm -v
 | 7    | keywords       | 키워드                      |
 | 8    | author         | 작성자                      |
 | 9    | license        | 라이선스                    |
-그러나 일반적으로 터미널 상태에서 설정하기 보다 package.json 파일에서 직접 변경하는 것이 직관적이므로 `$ npm init -y` 명령어를 통하여 터미널 설정화면을 생략하고 package.json 을 생성합니다.
+
+일반적으로 터미널 상태에서 설정하기 보다 package.json 파일에서 직접 변경하는 것이 직관적이므로 `$ npm init -y` 명령어를 통하여 터미널 설정화면을 생략하고 package.json 을 생성합니다.
 
 
 ## 패키지 설치
 `$ npm install 패키지명`
+
 설치 예시로 jQuery 라이브러리를 설치한다면 `$ npm install jquery`입니다.  
+
 설치 가능한 패키지는 [npmjs.com](https://www.npmjs.com)에서 찾아볼 수 있습니다.  
 패키지를 최초로 설치하면 `node_modules` 폴더가 생성됩니다.  
 설치된 패키지 파일은 `node_modules` 하위 폴더(예: `jquery`)에서 찾을 수 있습니다.  

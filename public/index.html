@@ -5,116 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>travel.music.coding</title>
     <link rel="stylesheet" href="assets/style.css">
-    <style>
-        /* 메인 페이지 전용 스타일 */
-        .welcome-section {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-            border-radius: 15px;
-            margin: 20px 0 40px 0;
-        }
-
-        .welcome-title {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 20px;
-            font-family: 'IBM Plex Mono';
-        }
-
-        .welcome-subtitle {
-            font-size: 1.2em;
-            color: #666;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .feature-card {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(255, 255, 255, 0.85);
-            z-index: 1;
-        }
-
-        .feature-card > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        .feature-card.travel {
-            background-image: url('./images/travel.png');
-        }
-
-        .feature-card.music {
-            background-image: url('./images/music.png');
-        }
-
-        .feature-card.coding {
-            background-image: url('./images/coding.png');
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        .feature-card:hover::before {
-            background-color: rgba(255, 255, 255, 0.8);
-        }
-
-        .feature-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .feature-title {
-            font-size: 1.5em;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .feature-description {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        @media (max-width: 767px) {
-            .welcome-title {
-                font-size: 2em;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
     <div class="layout">
@@ -145,16 +36,16 @@
                         <td>개발 팀</td>
                     </tr>
                     <tr>
-                        <td>컴퓨터학과</td>
-                        <td>김똘똘</td>
+                        <td>컴퓨터학부</td>
+                        <td>박동준</td>
                     </tr>
                     <tr>
-                        <td>소프트웨어학과</td>
-                        <td>이똘똘</td>
+                        <td>문화콘텐츠학과</td>
+                        <td>김란호</td>
                     </tr>
                     <tr>
-                        <td>컴퓨터학과</td>
-                        <td>박똘똘</td>
+                        <td>지능정보양자공학</td>
+                        <td>유호찬</td>
                     </tr>
                 </table>
                 

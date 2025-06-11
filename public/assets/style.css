@@ -1,3 +1,5 @@
+/* 블로그 공통 스타일 */
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -121,77 +123,6 @@ body {
 /* 콘텐츠 영역 스타일 */
 .content {
     padding: 15px;
-}
-
-.post {
-    margin-bottom: 30px;
-    border-bottom: 1px solid #b6b6b6;
-    padding-bottom: 20px;
-}
-
-.post h2 {
-    margin-bottom: 10px;
-}
-
-.post-category {
-    display: inline-block;
-    color: #555;
-    font-size: 1.4em;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.post-category::after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 10px;
-    background-color: #ffe60096;
-    transition: all 0.4s ease;
-}
-
-.post-category:hover {
-    color: #1c1c1c;
-    font-weight: 600;
-}
-
-.post-category:hover::after {
-    width: 100%;
-}
-
-.post-category:active {
-    transform: translateY(1px);
-}
-
-.post-header {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #bdbdbd;
-}
-
-.post-title {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #333;
-}
-
-.post-meta {
-    color: #888;
-    font-size: 0.9em;
-    margin-bottom: 15px;
-}
-
-.post-content img {
-    max-width: 800px;  /* 최대 너비 800px로 제한 */
-    width: 100%;       /* 모바일에서는 컨테이너 크기에 맞춤 */
-    height: auto;
-    border-radius: 10px;
-    margin: 15px auto; /* 상하 마진 15px, 좌우는 auto로 중앙 정렬 */
-    display: block;    /* 블록 요소로 변경하여 margin auto가 적용되도록 */
 }
 
 /* 모바일 레이아웃 (기본) */
@@ -415,7 +346,7 @@ body {
 }
 
 /* 태블릿 & 데스크톱 레이아웃 */
-@media (min-width: 768px) {
+@media (min-width: 901px) {
     .layout {
         flex-direction: row;
     }
@@ -439,7 +370,7 @@ body {
 }
 
 /* 모바일 메뉴 스타일 */
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .navbar {
         position: relative;
     }

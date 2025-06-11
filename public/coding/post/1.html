@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel.music.coding</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/post.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- 네비게이션 바 -->
+        <nav class="navbar">
+            <div class="navbar-top">
+                <h1><a href="../../index.html"><span>travel.</span><br>
+                    <span>music.</span><br>
+                    <span>coding.</span></a></h1>
+                <button class="menu-toggle" aria-label="메뉴 토글">☰</button>
+            </div>
+            <hr>
+            <ul id="menu">
+                <li><a href="../../index.html">🏠 메인</a></li>
+                <li><a href="../../travel/index.html">🏖️ 여행</a></li>
+                <li><a href="../../music/index.html">🎹 음악</a></li>
+                <li><a href="../../coding/index.html">💻 코딩</a></li>
+            </ul>
+            <hr>
+            <div class="navbar-footer pc" id="footer">
+                <p>© 2025 travel.music.coding</p>
+                <p>-</p>
+                <p>Hanyang University ERICA Campus</p>
+                <p>Web Publishing Assignments Blog Page</p>
+                <p>-</p>
+                <table>
+                    <tr>
+                        <td>개발 팀</td>
+                    </tr>
+                    <tr>
+                        <td>컴퓨터학부</td>
+                        <td>박동준</td>
+                    </tr>
+                    <tr>
+                        <td>문화콘텐츠학과</td>
+                        <td>김란호</td>
+                    </tr>
+                    <tr>
+                        <td>지능정보양자공학</td>
+                        <td>유호찬</td>
+                    </tr>
+                </table>
+                
+                <!-- 소셜 미디어 링크 -->
+                <div class="social-links">
+                    <a href="https://instagram.com" class="social-btn instagram" target="_blank" aria-label="Instagram"></a>
+                    <a href="https://youtube.com" class="social-btn youtube" target="_blank" aria-label="YouTube"></a>
+                    <a href="https://twitter.com" class="social-btn twitter" target="_blank" aria-label="X (Twitter)"></a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 콘텐츠 영역 -->
+        <main class="content">
+            <div class="container">
+                <article class="post">
+                    <div class="post-header">
+                        <a href="../" class="post-category">💻 코딩</a>
+                        <div class="post-title">React vs Vue.js vs Angular - 2025년 프론트엔드 프레임워크 비교</div>
+                        <div class="post-meta">작성일: 2025년 5월 1일 · 작성자: 박동준</div>
+                    </div>
+                    <div class="post-content">
+                        <img src="./img/1-1.webp">
+                        <p>프론트엔드 개발 생태계는 빠르게 변화하고 있습니다. 2025년 현재, 개발자들이 가장 많이 선택하는 세 가지 주요 프레임워크가 있습니다: <strong>React</strong>, <strong>Vue.js</strong>, 그리고 <strong>Angular</strong>. 각각의 프레임워크는 고유한 철학과 접근 방식을 가지고 있어, 프로젝트의 성격과 팀의 요구사항에 따라 최적의 선택이 달라집니다.</p>
+                        <p>이번 글에서는 세 프레임워크의 특징, 장단점, 그리고 어떤 상황에서 어떤 프레임워크를 선택해야 하는지에 대해 심층적으로 분석해보겠습니다.</p>
+                        <hr>
+                        <h2>1. React - 가장 인기 있는 라이브러리</h2>
+                        <p>React는 Facebook(현 Meta)에서 개발한 JavaScript 라이브러리로, 컴포넌트 기반의 UI 구축에 특화되어 있습니다. 2025년 현재 가장 큰 커뮤니티와 생태계를 보유하고 있습니다.</p>
+                        <img src="./img/1-2.png">
+                        <h3>React의 주요 장점</h3>
+                        <ul>
+                            <li><strong>거대한 생태계</strong>: npm 패키지, 컴포넌트 라이브러리, 도구들이 매우 풍부</li>
+                            <li><strong>유연성</strong>: 라이브러리 형태로 다른 기술과 쉽게 통합 가능</li>
+                            <li><strong>Virtual DOM</strong>: 뛰어난 성능 최적화</li>
+                            <li><strong>강력한 커뮤니티</strong>: 활발한 오픈소스 기여와 지원</li>
+                        </ul>
+                        <h3>React의 단점</h3>
+                        <ul>
+                            <li>높은 진입 장벽과 학습 곡선</li>
+                            <li>빠른 변화로 인한 지속적인 학습 필요</li>
+                            <li>설정과 구성의 복잡성</li>
+                        </ul>
+                        <hr>
+                        <h2>2. Vue.js - 점진적 채택이 가능한 프레임워크</h2>
+                        <p>Vue.js는 Evan You가 개발한 프레임워크로, 학습하기 쉽고 점진적으로 도입할 수 있다는 것이 가장 큰 특징입니다. 특히 기존 프로젝트에 단계적으로 적용하기에 이상적입니다.</p>
+                        <img src="./img/1-3.png">
+                        <h3>Vue.js의 주요 장점</h3>
+                        <ul>
+                            <li><strong>낮은 학습 곡선</strong>: HTML, CSS, JavaScript 지식만 있으면 쉽게 시작 가능</li>
+                            <li><strong>점진적 도입</strong>: 기존 프로젝트에 부분적으로 적용 가능</li>
+                            <li><strong>뛰어난 문서화</strong>: 체계적이고 이해하기 쉬운 공식 문서</li>
+                            <li><strong>균형잡힌 구조</strong>: 템플릿, 스크립트, 스타일이 하나의 컴포넌트에 통합</li>
+                        </ul>
+                        <h3>Vue.js의 단점</h3>
+                        <ul>
+                            <li>React에 비해 상대적으로 작은 생태계</li>
+                            <li>대규모 프로젝트에서의 검증 부족</li>
+                            <li>주요 기여자가 소수에 집중된 위험</li>
+                        </ul>
+                        <hr>
+                        <h2>3. Angular - 엔터프라이즈급 풀스택 프레임워크</h2>
+                        <p>Google에서 개발한 Angular는 TypeScript를 기본으로 하는 완전한 프레임워크입니다. 대규모 기업용 애플리케이션 개발에 특화되어 있습니다.</p>
+                        <img src="./img/1-4.png">
+                        <h3>Angular의 주요 장점</h3>
+                        <ul>
+                            <li><strong>완전한 프레임워크</strong>: 라우팅, HTTP 클라이언트, 폼 등 모든 기능 내장</li>
+                            <li><strong>TypeScript 기본 지원</strong>: 타입 안정성과 개발 생산성 향상</li>
+                            <li><strong>엔터프라이즈 친화적</strong>: 대규모 팀과 프로젝트에 적합한 구조</li>
+                            <li><strong>Google의 지원</strong>: 안정적인 개발과 유지보수</li>
+                        </ul>
+                        <h3>Angular의 단점</h3>
+                        <ul>
+                            <li>가파른 학습 곡선</li>
+                            <li>과도한 복잡성 (작은 프로젝트에는 오버엔지니어링)</li>
+                            <li>빈번한 메이저 업데이트</li>
+                        </ul>
+                        <hr>
+                        <h2>4. 2025년 트렌드와 선택 가이드</h2>
+                        <h3>프로젝트 규모별 추천</h3>
+                        <ul>
+                            <li><strong>소규모 프로젝트</strong>: Vue.js</li>
+                            <li><strong>중규모 프로젝트</strong>: React 또는 Vue.js</li>
+                            <li><strong>대규모 엔터프라이즈</strong>: Angular</li>
+                        </ul>
+                        <h3>팀 상황별 추천</h3>
+                        <ul>
+                            <li><strong>프론트엔드 초보 팀</strong>: Vue.js</li>
+                            <li><strong>경험 있는 개발 팀</strong>: React</li>
+                            <li><strong>기업 개발 팀</strong>: Angular</li>
+                        </ul>
+                        <hr>
+                        <h2>결론</h2>
+                        <p>2025년 현재, 세 프레임워크 모두 성숙한 단계에 도달했습니다. <strong>React는 유연성과 생태계</strong>, <strong>Vue.js는 사용 편의성과 점진적 도입</strong>, <strong>Angular는 완전성과 엔터프라이즈 적합성</strong>이 각각의 강점입니다.</p>
+                        <p>가장 중요한 것은 프로젝트의 요구사항, 팀의 경험, 장기적인 유지보수 계획을 종합적으로 고려하여 선택하는 것입니다. 잘못된 선택은 없으며, 각각의 도구가 서로 다른 문제를 해결하기 위해 존재한다는 점을 기억해야 합니다.</p>
+                        <br>
+                        <p>💡 <strong>팁</strong>: 새로운 프레임워크를 학습할 때는 공식 문서의 튜토리얼부터 시작하여 작은 프로젝트로 실습해보는 것을 추천합니다!</p>
+                    </div>
+                </article>
+
+                <!-- 목록으로 버튼 -->
+                <div style="text-align: center;">
+                    <a href="../" class="back-to-list">목록으로</a>
+                </div>
+
+                <!-- 댓글 섹션 -->
+                <section class="comment-section">     
+                    <!-- 댓글 목록 -->
+                    <div class="comments-list" id="commentsList">
+                        <div class="no-comments">
+                            아직 댓글이 없습니다. 첫 번째 댓글을 남겨보세요! 😊
+                        </div>
+                    </div>
+
+                    <form class="comment-form" id="commentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comment" name="comment" placeholder="댓글 내용을 입력해 주세요." required></textarea>
+                        </div>    
+                        <div style="text-align: end;">                                            
+                            <button type="submit" class="submit-btn">댓글 쓰기</button>
+                        </div>   
+                    </form>
+                </section>
+
+                <!-- 푸터 (모바일만) -->
+                <div class="navbar-footer mobile" id="mobileFooter">
+                    <!-- JavaScript로 PC 푸터 내용이 복사됩니다 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../assets/comment.js"></script>
+</body>
+</html>
