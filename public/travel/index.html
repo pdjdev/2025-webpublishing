@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 - travel.music.coding</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        /* 콘텐츠 영역 스타일 */
+        .content {
+            padding: 15px;
+        }
+
+        /* 페이지 헤더 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+        }
+
+        .page-title {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .page-description {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* 글 목록 스타일 */
+        .post-list {
+            display: grid;
+            gap: 30px;
+        }
+
+        .post-item {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .post-thumbnail {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .post-content {
+            padding: 25px;
+        }
+
+        .post-category {
+            display: inline-block;
+            color: #555;
+            font-size: 1.1em;
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .post-category::after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 8px;
+            background-color: #ffe60096;
+            transition: all 0.4s ease;
+        }
+
+        .post-category:hover {
+            color: #1c1c1c;
+            font-weight: 600;
+        }
+
+        .post-category:hover::after {
+            width: 100%;
+        }
+
+        .post-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .post-title:hover {
+            color: #555;
+        }
+
+        .post-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .post-meta {
+            color: #888;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .read-more {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #555;
+            color: white;
+            border-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <!-- 네비게이션 바 -->
+        <nav class="navbar">
+            <div class="navbar-top">
+                <h1><a href="../"><span>travel.</span><br>
+                    <span>music.</span><br>
+                    <span>coding.</span></a></h1>
+                <button class="menu-toggle" aria-label="메뉴 토글">☰</button>
+            </div>
+            <hr>
+            <ul id="menu">
+                <li><a href="../">🏠 메인</a></li>
+                <li><a href="#">🏖️ 여행</a></li>
+                <li><a href="#">🎹 음악</a></li>
+                <li><a href="#">💻 코딩</a></li>
+            </ul>
+            <hr>
+            <div class="navbar-footer pc" id="footer">
+                <p>© 2025 travel.music.coding</p>
+                <p>-</p>
+                <p>Hanyang University ERICA Campus</p>
+                <p>Web Publishing Assignments Blog Page</p>
+                <p>-</p>
+                <table>
+                    <tr>
+                        <td>개발 팀</td>
+                    </tr>
+                    <tr>
+                        <td>컴퓨터학과</td>
+                        <td>김똘똘</td>
+                    </tr>
+                    <tr>
+                        <td>소프트웨어학과</td>
+                        <td>이똘똘</td>
+                    </tr>
+                    <tr>
+                        <td>컴퓨터학과</td>
+                        <td>박똘똘</td>
+                    </tr>
+                </table>
+                
+                <!-- 소셜 미디어 링크 -->
+                <div class="social-links">
+                    <a href="https://instagram.com" class="social-btn instagram" target="_blank" aria-label="Instagram"></a>
+                    <a href="https://youtube.com" class="social-btn youtube" target="_blank" aria-label="YouTube"></a>
+                    <a href="https://twitter.com" class="social-btn twitter" target="_blank" aria-label="X (Twitter)"></a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 콘텐츠 영역 -->
+        <main class="content">
+            <div class="container">
+                <!-- 페이지 헤더 -->
+                <header class="page-header">
+                    <h1 class="page-title">🏖️ 여행</h1>
+                    <p class="page-description">세상 곳곳을 다니며 발견한 아름다운 순간들과 경험을 기록합니다</p>
+                </header>
+
+                <!-- 글 목록 -->
+                <section class="post-list">
+                    <article class="post-item">
+                        <div class="post-thumbnail" style="background-image: url('https://github.com/user-attachments/assets/dde6e502-8935-484f-b6cd-7a4cf0043d8f')"></div>
+                        <div class="post-content">
+                            <a href="#" class="post-category">🏖️ 여행</a>
+                            <a href="post/1.html" class="post-title">매혹적인 유럽의 보물, 스페인 여행기</a>
+                            <p class="post-excerpt">스페인은 그 자체로 하나의 예술입니다. 가우디의 건축물, 플라멩코의 열정, 피카소와 달리의 흔적, 그리고 지중해의 태양까지. 마드리드와 바르셀로나를 중심으로 한 스페인 여행의 매력을 온몸으로 느낄 수 있었던 여행기를 공유합니다.</p>
+                            <div class="post-meta">
+                                <span>2025년 6월 4일</span>
+                                <a href="post/1.html" class="read-more">더 읽기</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- 푸터 (모바일만) -->
+                <div class="navbar-footer mobile" id="mobileFooter">
+                    <!-- JavaScript로 PC 푸터 내용이 복사됩니다 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/scripts.js"></script>
+</body>
+</html>

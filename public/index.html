@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel.music.coding</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* 메인 페이지 전용 스타일 */
+        .welcome-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            margin: 20px 0 40px 0;
+        }
+
+        .welcome-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'IBM Plex Mono';
+        }
+
+        .welcome-subtitle {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: 1;
+        }
+
+        .feature-card > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-card.travel {
+            background-image: url('./images/travel.png');
+        }
+
+        .feature-card.music {
+            background-image: url('./images/music.png');
+        }
+
+        .feature-card.coding {
+            background-image: url('./images/coding.png');
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .feature-card:hover::before {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 767px) {
+            .welcome-title {
+                font-size: 2em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <!-- 네비게이션 바 -->
+        <nav class="navbar">
+            <div class="navbar-top">
+                <h1><a href="index.html"><span>travel.</span><br>
+                    <span>music.</span><br>
+                    <span>coding.</span></a></h1>
+                <button class="menu-toggle" aria-label="메뉴 토글">☰</button>
+            </div>
+            <hr>
+            <ul id="menu">
+                <li><a href="#">🏠 메인</a></li>
+                <li><a href="./travel/index.html">🏖️ 여행</a></li>
+                <li><a href="./music/index.html">🎹 음악</a></li>
+                <li><a href="./coding/index.html">💻 코딩</a></li>
+            </ul>
+            <hr>
+            <div class="navbar-footer pc" id="footer">
+                <p>© 2025 travel.music.coding</p>
+                <p>-</p>
+                <p>Hanyang University ERICA Campus</p>
+                <p>Web Publishing Assignments Blog Page</p>
+                <p>-</p>
+                <table>
+                    <tr>
+                        <td>개발 팀</td>
+                    </tr>
+                    <tr>
+                        <td>컴퓨터학과</td>
+                        <td>김똘똘</td>
+                    </tr>
+                    <tr>
+                        <td>소프트웨어학과</td>
+                        <td>이똘똘</td>
+                    </tr>
+                    <tr>
+                        <td>컴퓨터학과</td>
+                        <td>박똘똘</td>
+                    </tr>
+                </table>
+                
+                <!-- 소셜 미디어 링크 -->
+                <div class="social-links">
+                    <a href="https://instagram.com" class="social-btn instagram" target="_blank" aria-label="Instagram"></a>
+                    <a href="https://youtube.com" class="social-btn youtube" target="_blank" aria-label="YouTube"></a>
+                    <a href="https://twitter.com" class="social-btn twitter" target="_blank" aria-label="X (Twitter)"></a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- 콘텐츠 영역 -->
+        <main class="content">
+            <div class="container">
+                <!-- 환영 섹션 -->
+                <section class="welcome-section">
+                    <h1 class="welcome-title">travel.music.coding</h1>
+                    <p class="welcome-subtitle">여행, 음악, 그리고 코딩에 대한 개인적인 기록 공간</p>
+                </section>
+
+                <!-- 특성 카드 -->
+                <section class="feature-grid">
+                    <div class="feature-card travel" onclick="location.href='./travel/index.html'">
+                        <span class="feature-icon">🏖️</span>
+                        <h3 class="feature-title">여행</h3>
+                        <p class="feature-description">세계 곳곳을 다니며 경험한 문화와 풍경, 그리고 그 속에서 느낀 감정들을 기록합니다. 여행지의 숨겨진 매력과 실용적인 팁도 함께 공유해요.</p>
+                    </div>
+                    
+                    <div class="feature-card music" onclick="location.href='./music/index.html'">
+                        <span class="feature-icon">🎹</span>
+                        <h3 class="feature-title">음악</h3>
+                        <p class="feature-description">일상에 스며든 다양한 음악들과 그 순간의 감정을 담습니다. 새로 발견한 아티스트나 공연 후기, 그리고 음악이 주는 영감을 나눕니다.</p>
+                    </div>
+                    
+                    <div class="feature-card coding" onclick="location.href='./coding/index.html'">
+                        <span class="feature-icon">💻</span>
+                        <h3 class="feature-title">코딩</h3>
+                        <p class="feature-description">개발 과정에서 배운 것들과 새로운 기술에 대한 탐구를 기록합니다. 문제 해결 과정과 배움의 순간들을 솔직하게 담아냅니다.</p>
+                    </div>
+                </section>
+
+                <!-- 푸터 (모바일만) -->
+                <div class="navbar-footer mobile" id="mobileFooter">
+                    <!-- JavaScript로 PC 푸터 내용이 복사됩니다 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
