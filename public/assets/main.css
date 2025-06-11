@@ -61,15 +61,15 @@
 }
 
 .feature-card.travel {
-    background-image: url('../images/travel.png');
+    background-image: url('../images/travel.jpg');
 }
 
 .feature-card.music {
-    background-image: url('../images/music.png');
+    background-image: url('../images/music.jpg');
 }
 
 .feature-card.coding {
-    background-image: url('../images/coding.png');
+    background-image: url('../images/coding.jpg');
 }
 
 .feature-card:hover {
